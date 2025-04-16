@@ -1,13 +1,5 @@
-#include "method.h"
+#include "NumMethod.h"
 
-double H(double t) {
-    if (t >= 0) return 1.0;
-    return 0;
-}
-
-double sigma(double t) {
-    return -S_0 * H(t);
-} 
 
 double alpha() {  //(3)
     return 1 - K/K_s;

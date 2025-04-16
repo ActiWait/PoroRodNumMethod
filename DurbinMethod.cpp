@@ -1,4 +1,4 @@
-#include "durbin.h"
+#include "DurbinMethod.h"
 
 
 double Real_Part_Func(double t, double sigma, int N, double T, double x, std::complex<double> (*F)(std::complex<double> s,double x)) {

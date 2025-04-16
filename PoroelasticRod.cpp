@@ -1,6 +1,6 @@
 #include <iostream>
-#include "method.h"
-#include "durbin.h"
+#include "NumMethod.h"
+#include "DurbinMethod.h"
 
 std::complex<double> sinus(std::complex<double> s, double x) {
     std::complex<double> plus1(1,0);
