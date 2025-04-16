@@ -3,6 +3,8 @@
 #include <cmath>
 #include <complex>
 
+#define PI 3.14159265358979311600
+
 const double K = 2.1e8;
 const double G = 9.8e7;
 const double ro = 1884;
