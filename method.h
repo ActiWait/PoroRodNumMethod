@@ -15,7 +15,6 @@ const double k = 3.55e-9;
 const double fi = 0.5;
 const double L = 3;
 const double S_0 = 1;
-const std::complex<double> s;
 
 double H(double t);
 
