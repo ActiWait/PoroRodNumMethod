@@ -38,10 +38,10 @@ std::complex<double> lambda(int ind, std::complex<double> s) { //(11)
     std::complex<double> scale2(2,0);
     switch (ind) {
     case 1:
-        return sqrt((B(s) + sqrt(B(s)*B(s) - scale4 * A(s)*C(s)))/(scale2*A(s)));
+        return  sqrt((B(s) + sqrt(B(s)*B(s) - scale4*A(s)*C(s)))/(scale2*A(s)));
         break;
     case 2:
-        return sqrt((B(s) - sqrt(B(s)*B(s) - scale4*A(s)*C(s)))/(scale2*A(s)));
+        return  sqrt((B(s) - sqrt(B(s)*B(s) - scale4*A(s)*C(s)))/(scale2*A(s)));
         break;
     case 3:
         return -sqrt((B(s) + sqrt(B(s)*B(s) - scale4*A(s)*C(s)))/(scale2*A(s)));
@@ -59,7 +59,6 @@ std::complex<double> d(int ind, std::complex<double> s) {       //(13)
 }
 
 std::complex<double> u_cap(std::complex<double> s, double x) {  //(8)
-    //if (x == 0) return 0;
     std::complex<double> scale2(2,0);
     std::complex<double> sum1(1,0);
 
@@ -69,7 +68,6 @@ std::complex<double> u_cap(std::complex<double> s, double x) {  //(8)
     return scale*(desired - deductible);
 }
 std::complex<double> p_cap(std::complex<double> s, double x) { //(9)
-    //if (x == L) return 0;
     std::complex<double> scale2(2,0);
     std::complex<double> sum1(1,0);
 
