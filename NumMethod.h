@@ -15,31 +15,30 @@ const double k = 3.55e-9;
 const double fi = 0.5;
 const double L = 3;
 const double S_0 = 1;
-
-double H(double t);
-
-double sigma(double t);
+const std::complex<double> scale2(2,0);
+const std::complex<double> scale4(4,0);
+const std::complex<double> sum1(1,0);
 
 double alpha();
 
 double ro_a();
 
-std::complex<double> betta(std::complex<double> s);
+std::complex<double> betta(const std::complex<double> &s);
 
 double R();
 
 double E();
 
-std::complex<double> A(std::complex<double> s);
+std::complex<double> A(const std::complex<double> &s);
 
-std::complex<double> B(std::complex<double> s);
+std::complex<double> B(const std::complex<double> &s);
 
-std::complex<double> C(std::complex<double> s);
+std::complex<double> C(const std::complex<double> &s);
 
-std::complex<double> lambda(int ind, std::complex<double> s);
+std::complex<double> lambda(int ind, const std::complex<double> &s);
 
-std::complex<double> d(int ind, std::complex<double> s);
+std::complex<double> d(int ind, const std::complex<double> &s);
 
-std::complex<double> u_cap(std::complex<double> s, double x);
+std::complex<double> u_cap(const std::complex<double> &s, const double &x);
 
-std::complex<double> p_cap(std::complex<double> s, double x);
+std::complex<double> p_cap(const std::complex<double> &s, const double &x);
